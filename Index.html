@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kiosk Display</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      width: 100vw;
+    }
+    .video-half, .booking-half {
+      flex: 1;
+      overflow: hidden;
+    }
+    iframe {
+      border: none;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="video-half">
+      <iframe 
+        src="https://www.youtube.com/embed/CbH4omOqrMk?autoplay=1&loop=1&mute=1&playlist=CbH4omOqrMk&controls=0&showinfo=0&modestbranding=1&rel=0" 
+        allow="autoplay; encrypted-media" 
+        allowfullscreen>
+      </iframe>
+    </div>
+    <div class="booking-half">
+      <iframe 
+        src="https://ehr.charmtracker.com/publicCal.sas?method=getCal&digest=9db46c5d901fa2b4095d05e1306157be5b60d68dbcc5679aad75bd174e98f7275385f436ad42bc026a0903832426cb21c2fe0580a6189219">
+      </iframe>
+    </div>
+  </div>
+</body>
+</html>
