@@ -17,15 +17,16 @@
       width: 100vw;
     }
     .video-half {
-      height: 315px; /* Fixed height for 16:9 video */
+      flex: 0 0 40%; /* 40% height for video */
+      background: black;
       display: flex;
       justify-content: center;
       align-items: center;
-      background: black;
     }
     .video-half iframe {
-      width: 560px;
-      height: 315px;
+      width: 100%;
+      height: 100%;
+      border: none;
     }
     .booking-half {
       flex: 1;
@@ -41,7 +42,7 @@
   <div class="container">
     <div class="video-half">
       <iframe 
-        src="https://www.youtube.com/embed/HvJVJ6rRbD0?autoplay=1&loop=1&mute=1&playlist=HvJVJ6rRbD0&controls=0&showinfo=0&modestbranding=1&rel=0" 
+        src="https://www.youtube.com/embed/CbH4omOqrMk?autoplay=1&loop=1&mute=1&playlist=CbH4omOqrMk&controls=0&modestbranding=1&rel=0" 
         allow="autoplay; encrypted-media" 
         allowfullscreen>
       </iframe>
